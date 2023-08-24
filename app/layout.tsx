@@ -10,12 +10,18 @@ import getSongsByUserId from '@/actions/getSongsByUserId'
 import Player from '@/components/Player'
 import getActiveProductsWithPrices from '@/actions/getActiveProductsWithPrices'
 
-const font = Figtree({ subsets: ['latin'] })
+export const dynamic = 'force-dynamic';
+
+const font = Figtree({ subsets: ['latin'] });
+
+
 
 export const metadata: Metadata = {
   title: 'Spotify clone',
   description: 'Listen music when you want you get seamless experience.',
 }
+
+
 
 export default async function RootLayout({
   children,

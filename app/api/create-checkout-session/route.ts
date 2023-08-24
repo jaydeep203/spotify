@@ -45,7 +45,7 @@ export async function POST(
 
         return NextResponse.json({sessionId: session.id});
         
-    } catch (error) {
+    } catch (error: any) {
         console.log(error);
         return new NextResponse('Internal Error Checkout trial', { status: 500 });
     }
